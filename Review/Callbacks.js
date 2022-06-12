@@ -15,8 +15,8 @@ const GetCustomerOrders = (email , callback) => {
 }
 
 GetCustomer(1 , (customer) => {
-    console.log("Customer", customer);   
+    console.log("Customer", customer);  
+    GetCustomerOrders(customer.email , (order)=>{
+    console.log(order)
+    });
 });
-
-GetCustomerOrders(customer.email);
-

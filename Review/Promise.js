@@ -22,25 +22,3 @@ GetCustomer(1)
 .then((customer) => GetCustomerOrders(customer.email))
 .then(order => console.log(order))
 .catch(error => console.log(error));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const myPromise = new Promise((rseolve , reject) => {
-    setTimeout(() => rseolve("Success"), 2000);
-
-});
-
-
-myPromise.then(p => console.log(p)).catch(error => console.log(error));

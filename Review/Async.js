@@ -1,15 +1,3 @@
-async function f()
-{
-    let promise = new promise((rseolve , reject) => {
-        setTimeout(() => rseolve("Success"), 2000);
-    });
-    let result = await promise;
-    alert(result);
-}
-
-f();
-
-
 function GetCustomer(id)
 {
     console.log("Getting Customer Data , Please Wait");
@@ -33,6 +21,5 @@ const GetCustomerOrders = (email) => {
 async function test() {
     const customer = await GetCustomer(1);
     const order = await GetCustomerOrders(customer.email);
+    console.log(customer);
 }
-
-test();
